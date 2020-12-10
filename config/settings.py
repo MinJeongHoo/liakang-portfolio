@@ -135,7 +135,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
-
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 """앞에 /붙히고 절대경로로 변경"""
 MEDIA_URL = "/media/"

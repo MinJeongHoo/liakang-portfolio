@@ -10,6 +10,9 @@ autopep8 = "*"
 django = "==2.2.5"
 psycopg2 = "*"
 pillow = "*"
+dj-database-url = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"

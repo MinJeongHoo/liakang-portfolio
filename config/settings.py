@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'tr&eirv%uo-*p4w7bc0=vyt^%(=ob($hhg8+wkn*sk5rh%2jr8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -139,3 +139,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 
 """앞에 /붙히고 절대경로로 변경"""
 MEDIA_URL = "/media/"
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)

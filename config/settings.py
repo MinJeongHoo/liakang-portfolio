@@ -47,7 +47,8 @@ DJANGO_APPS = [
 MAKE_APPS = [
     'works.apps.WorksConfig',
     'workcategory.apps.WorkcategoryConfig',
-    'core.apps.CoreConfig'
+    'core.apps.CoreConfig',
+    'cloudinary'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + MAKE_APPS
@@ -145,3 +146,11 @@ MEDIA_URL = "/media/"
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 django_heroku.settings(locals())
+
+
+cloudinary.config(
+    cloud_name="dw5i7ifxs",
+    api_key="449918518457167",
+    api_secret="u4vrTF17I3DiEvofgq6lGvIWUAY",
+    secure=True
+)

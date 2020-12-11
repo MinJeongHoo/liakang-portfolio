@@ -43,7 +43,7 @@ class Command(BaseCommand):
             material = WorkMaterial.objects.get(name=item[2])
             size = WorkSize.objects.get(name=item[3])
             WorksModel.objects.create(
-                year=item[4], category=category, material=material, size=size, worksTitle=item[1], image=item[5])
+                year=item[4], category=category, material=material, size=size, worksTitle=item[1])
         self.stdout.write(self.style.SUCCESS("Works created!"))
 
         # material = [

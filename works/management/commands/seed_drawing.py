@@ -18,7 +18,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         arr = [
             ["7", "Drawing", "", "", "",
-                "/Users/min/Documents/liaportfolio/uploads/drawing/1.jpg"]
+                "/Users/min/Documents/liaportfolio/media/1.jpg"]
             # ["7", "Drawing", "", "", "", f"drawing/2.jpg"],
             # ["7", "Drawing", "", "", "", f"drawing/3.jpg"],
             # ["7", "Drawing", "", "", "", f"drawing/4.jpg"],

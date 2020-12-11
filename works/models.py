@@ -30,7 +30,7 @@ class WorkMaterial(AbstractItem):
 class WorksModel(models.Model):
 
     worksTitle = models.CharField(max_length=150)
-    image = models.ImageField()
+    image = CloudinaryField()
     year = models.CharField(max_length=4, null=True, default="")
     category = models.ForeignKey('workcategory.WorksCategoryModel',
                                  related_name="work", on_delete=models.CASCADE, unique=False, null=True)

@@ -2,7 +2,7 @@
 {%block content%}
 <div id="works">
     <section class="main__works">
-        <h1 class="works__title">WORK NOTE</h1>
+        <h1 class="works__title"><a href="{%url 'works:works' %}">WORK NOTE</a></h1>
         <div class="category__list">
             {% for name in category  %}
             <a class="category__btn {% if categoryDec.pk == name.pk %}

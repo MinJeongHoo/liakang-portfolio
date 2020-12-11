@@ -121,6 +121,5 @@ dmypy.json
 # Mac
 .DS_Store
 node_modules/
-uploads/
 db.sqlite3
 local_setting.py

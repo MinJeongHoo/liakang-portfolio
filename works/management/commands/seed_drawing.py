@@ -16,7 +16,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         arr = [
-            ["7", "Drawing", "", "", "",  ""],
+            ["7", "Drawing", "", "", "",  f"drawing/1.jpg"],
             ["7", "Drawing", "", "", "", f"drawing/2.jpg"],
             ["7", "Drawing", "", "", "", f"drawing/3.jpg"],
             ["7", "Drawing", "", "", "", f"drawing/4.jpg"],

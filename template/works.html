@@ -55,6 +55,14 @@
         <div class="detail__title">WORKS</div>
         <div class="works__info">
             {% for work in works %}
+
+            {% if work.category.pk==7 %}
+            <div class="img__card" id="{{work.category.pk}}">
+                <img id="{{work.image}}" src="media/{{work.image}}" data-src="media/{{work.image}}"
+                    data-size="{{work.size}}" data-material="{{work.material}}" data-category="{{work.category}}"
+                    data-year="{{work.year}}" data-title="{{work.worksTitle}}" onclick='openModal(this);' />
+            </div>
+            {%else%}
             <div class="img__card" id="{{work.category.pk}}">
                 <img id="{{work.image}}"
                     src="https://res.cloudinary.com/dw5i7ifxs/image/upload/v1607660722/{{work.image}}"
@@ -62,6 +70,9 @@
                     data-size="{{work.size}}" data-material="{{work.material}}" data-category="{{work.category}}"
                     data-year="{{work.year}}" data-title="{{work.worksTitle}}" onclick='openModal(this);' />
             </div>
+            {% endif %}
+
+
             {% endfor %}
         </div>
     </section>
